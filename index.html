@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home | The Executive Mansion </title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        p img{
+            width: 120px;
+            height: 120px;
+        }
+
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
+
+        #circle{
+          margin-top: 5px;
+          width: 175px;
+          height: 40px;
+          background-color: yellow;
+        }
+
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;   
+        }
+
+        #next{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;   
+        }
+
+        #left{
+            float: left;
+            width: 700px;
+            height: 400px;
+        }
+
+        #left img{
+            width: 698px;
+            height: 410px;
+        }
+
+        #right{
+            background-color: rgb(216, 212, 212);
+            width: 500px;
+            height: 410px;
+        }
+
+        #right h2{
+          margin-left: 30px;
+        }
+
+        #right h3{
+          width: 120px;
+          padding: 2px;
+          margin-left: 30px;
+          background-color: rgb(177, 6, 6);
+        }
+
+        #right label{
+          margin-left: 30px;
+          font-size: 20px;
+        }
+
+        h3{
+          width: 160px;
+          padding: 2px;
+          margin-left: 60px;
+          background-color: rgb(177, 6, 6);
+        }
+
+        .min{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .sub-min{
+          margin: 10px;
+          width: 400px;
+        }
+
+        .sub-min img{
+          width: 400px;
+          height: 300px;
+        }
+
+        .sub-min label{
+          font-size: 15px;
+          color: gray;
+        }
+
+        .sub-min h2{
+          font-size: 18px;
+        }
+
+        .focus{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .sub-focus-left{
+          width: 750px;
+          height: 700px;
+          float: left;
+        }
+
+        .sub-focus-right{
+          float: right;
+          width: 400px;
+          height: 600px;
+          background-color: rgb(202, 198, 198);
+          border-radius: 10px;
+        }
+
+        .bold{
+          float: left;
+          display: flex;
+          justify-content: center;
+          margin: 10px;
+        }
+
+        .sub-bold-left a{
+          text-decoration: none;
+          color: black;
+        }
+
+        .sub-bold-right{
+          margin-left: 10px;
+        }
+
+        .sub-bold-right a{
+          text-decoration: none;
+          color: black;
+        }
+        .sub-bold-left img{
+          width: 250px;
+          height: 200px;
+        }
+
+        .sub-bold-right label{
+          font-size: 15px;
+          color: gray;
+        }
+
+        .center{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .middle{
+          width: 500px;
+          height: 550px;
+          background-color: rgb(214, 209, 209);
+          border-radius: 5px;
+        }
+
+        .middle h3{
+          width: 120px;
+          padding: 2px;
+          margin-left: 20px;
+          background-color: rgb(177, 6, 6);
+        }
+
+        #icons{
+          width: 720px;
+          height: 87px;
+          background-color: rgb(211, 208, 208);
+          border-radius: 5px;
+        }
+
+        #icons i{
+          float: left;
+        }
+
+        #icons a{
+          font-size: 30px;
+          text-decoration: none;
+          color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <br>
+    <p> 
+       <img src="logo.svg" alt=""> 
+    </p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger-red">
+     <div class="container-fluid">
+     <a class="navbar-brand" href="#" style="font-size: 25px; color: white;"> Home </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 23px; color: white;">
+            The President
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> President's Biography </a></li>
+            <li><a class="dropdown-item" href="#"> The Cabinet </a></li>
+            <li><a class="dropdown-item" href="#"> Executive Orders </a></li>
+            <li><a class="dropdown-item" href="#"> Proclamations </a></li>
+            <li><a class="dropdown-item" href="#"> Asset Declaration </a></li>
+            <li><a class="dropdown-item" href="#"> Speeches </a></li>
+            <li><a class="dropdown-item" href="#"> Key Staff </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 23px; color: white;">
+            The Vice President
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> Vice President's Biography </a></li>
+            <li><a class="dropdown-item" href="#"> Vice President Speeches </a></li>
+            <li><a class="dropdown-item" href="#"> Vice President's Chief of Staff </a></li>
+            <li><a class="dropdown-item" href="#"> Vice President's News & Press Releases </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 23px; color: white;">
+            The First Lady
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> The First Lady's Biography </a></li>
+            <li><a class="dropdown-item" href="#"> First Lady's News & Press Releases </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 23px; color: white;">
+            MOS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> Presidential Affairs </a></li>
+            <li><a class="dropdown-item" href="#"> Without Portfolio </a></li>
+            <li><a class="dropdown-item" href="#"> Past President's Websites </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 23px; color: white;">
+            Opportunities
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> Procurement Notices </a></li>
+            <li><a class="dropdown-item" href="#"> Schorlarships </a></li>
+            <li><a class="dropdown-item" href="#"> Vacancies </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 23px; color: white;">
+            Media
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> Documents & Reports </a></li>
+            <li><a class="dropdown-item" href="#"> Events </a></li>
+            <li><a class="dropdown-item" href="#"> News & Press Releases </a></li>
+            <li><a class="dropdown-item" href="#"> Videos </a></li>
+            <li><a class="dropdown-item" href="#"> Photo Gallery </a></li>
+            <li><a class="dropdown-item" href="#"> Press Briefing </a></li>
+          </ul>
+        </li>
+
+        <a class="navbar-brand" href="#" style="font-size: 25px; color: white;"> Contact </a> 
+
+        <div id="circle">
+          <i class="fa-solid fa-magnifying-glass" style="margin-top: 10px; font-size: 25px; float: right;"></i>
+        </div> 
+        
+    </nav>
+    <br>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+   </div>
+
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="main">
+        <div id="left">
+        <img src="1.jpg">
+      </div>
+      <div id="right"> <br>
+        <h2> President Boakai <br> Inaugurates US $1.4 Billion <br> ArcelorMittal Concentrator <br> Plant in Nimba County </h2>
+        <h3> </h3>
+        <label> President Joseph Nyuma Boakai, Sr., has officially <br> inaugurated the US$1.4 billion Concentrator Plant <br> at the Mt. Tokadeh Mining Site in Nimba County, <br>
+        operated by ArcelorMittal Liberia.  </label>
+      </div>
+      <button style="width: 120px; padding: 12px; background-color: transparent; border: 1px solid white; border-radius: 25px; margin-left: 20px;"> <a href="" style="text-decoration: none; color: white; font-size: 20px;"> <b> Explore </b>  </a> </button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+     <div class="main">
+      <div id="left">
+        <img src="2.jpg">
+      </div>
+      <div id="right"> <br>
+        <h2> President Boakai Issues <br> Executive Order No. 150 to <br> Suspend Import Tariff on <br> Rice </h2>
+        <h3> </h3>
+        <label> In an effort to ease the economic burden on <br> Liberians and stabilize the price of rice, President <br> Joseph Nyuma Boakai, Sir., has signed Executive <br>
+        Order No. 150, extending the suspension of import tariffs on rice.  </label>
+      </div>
+      <button style="width: 120px; padding: 12px; background-color: transparent; border: 1px solid white; border-radius: 25px; margin-left: 20px;"> <a href="" style="text-decoration: none; color: white; font-size: 20px;"> <b> Apply </b> </a> </button>
+     </div>
+    </div>
+
+    <div class="carousel-item" >
+      <div class="main">
+        <div id="left">
+        <img src="3.jpg">
+      </div>
+      <div id="right"> <br>
+        <h2> Liberia Elected to United <br> Nations Security Council: <br> President Boakai Declares a <br> New Chapter in Global <br> Engagement </h2>
+        <h3> </h3>
+        <label> Liberia has been elected to a non-permanent <br> seat on the United Nations Security Council <br>
+        (UNSC) for the 2026-2027 term, marking a <br> historic milestone in the nation's international <br> reemergence.  </label>
+      </div>
+      <button style="width: 120px; padding: 12px; background-color: transparent; border: 1px solid white; border-radius: 25px; margin-left: 1180px;"> <a href="" style="text-decoration: none; color: white; font-size: 20px;"> <b> Apply </b> </a> </button>
+      </div>
+    </div>
+
+    <div class="carousel-item" >
+      <div class="main">
+        <div id="left">
+        <img src="4.jpg">
+      </div>
+      <div id="right"> <br>
+        <h2> President Boakai Joins West <br> African Leaders in Signing <br> ECOWAS 50th Anniversary <br> Declaration in Lagos </h2>
+        <h3> </h3>
+        <label> President Joseph Nyuma Boakai, Sr., on May 28, <br> 2025, joined fellow West African leaders in <br> signing a landmark declaration commemorating <br>
+        the 50th Anniversary of the Economic Community <br> of West African States (ECOWAS), reaffirming <br> their collective commitment to the organization's <br> 
+        founding ideals and future aspirations. </label>
+      </div>
+      <button style="width: 120px; padding: 12px; background-color: transparent; border: 1px solid white; border-radius: 25px; margin-left: 1180px;"> <a href="" style="text-decoration: none; color: white; font-size: 20px;"> <b> Apply </b> </a> </button>
+      </div>
+    </div>
+
+    <div class="carousel-item" >
+      <div class="main">
+        <div id="left">
+        <img src="5.jpg">
+      </div>
+      <div id="right"> <br>
+        <h2> President Boakai <br> Commissions Ambassador <br> Bob Sheriff as Liberia's <br> Envoy to the Republic of <br> Sierra Leone </h2>
+        <h3> </h3>
+        <label> President Joseph Nyuma Boakai, Sir., President <br> of the Republic of Liberia, has officially <br> commissioned Mr. Bob Sheriff as Liberia's <br>
+        Ambassador Extraordinary and Plenipotentiary to <br> the Republic of Sierra Leone. </label>
+      </div>
+      <button style="width: 120px; padding: 12px; background-color: transparent; border: 1px solid white; border-radius: 25px; margin-left: 1180px;"> <a href="" style="text-decoration: none; color: white; font-size: 20px;"> <b> Apply </b> </a> </button>
+      </div>
+    </div>
+   
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+   </button>
+  </div>
+
+  <br><br>
+
+  <b style="font-size: 30px; margin-left: 60px;"> NEWS & PRESS RELEASES </b> 
+  <br><br>
+  <h3> </h3>
+  <br><br>
+  <div class="min">
+    <div class="sub-min">
+      <a href="" style="text-decoration: none; color: black;"> 
+       <img src="Address By.jpg"> <br>
+       <label> FRIDAY, JUNE 20, 2025 </label>
+       <h2> President Boakai Arrives in Abuja, Leads <br> Delegation to West Africa Economic Summit </h2>
+      </a>
+    </div>
+
+    <div class="sub-min">
+      <a href="" style="text-decoration: none; color: black;">
+        <img src="President boakai11.jpg"> <br>
+        <label> WEDNESDAY, JUNE 18, 2025 </label>
+        <h2> President Boakai Establishes Presidential <br> Task Force in Response to U.S. Concerns</h2>
+      </a>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="focus">
+    <div class="sub-focus-left">
+      <div class="bold">
+        <div class="sub-bold-left">
+          <a href="">
+            <img src="Boakai 0.jpg">
+          </a>
+        </div>
+        <div class="sub-bold-right"> 
+          <a href="">
+           <label> TUESDAY, JUNE 17, 2025 | PRESS RELEASE</label>
+            <h2 style="font-size: 20px;"> "The race car is on the race trace we're moving this <br> country forward," declares President Boakai as he <br> Tours LBS Modernization Project in Paynesville </h2>
+          </a>
+        </div>
+      </div>
+      <div class="bold">
+        <div class="sub-bold-left">
+          <a href="">
+           <img src="Congregation.jpg">
+          </a>
+        </div>
+        <div class="sub-bold-right"> 
+          <a href="">
+            <label> TUESDAY, JUNE 17, 2025 | PRESS RELEASE</label>
+            <h2 style="font-size: 20px;"> President Boakai Welcomes Students and Faculty of <br> Cyber-Ed Christian School of Excellence at the <br> Executive Mansion </h2>
+          </a>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="bold">
+        <div class="sub-bold-left">
+          <a href="">
+            <img src="Boakai.jpg">
+          </a>
+        </div>
+        <div class="sub-bold-right"> 
+          <a href="">
+            <label> TUESDAY, JUNE 16, 2025 | PRESS RELEASE</label>
+            <h2 style="font-size: 19px;"> President Boakai Suspends LTA Acting Chairman Amid <br> GAC Report on Financial Misconduct </h2>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="sub-focus-right">
+     <br><br>
+      <h2 style="margin-left: 20px;"> RECENT DOCUMENTS </h2>
+      <h3 style="margin-left: 20px;"> </h3>
+      <label style="margin-left: 20px;"> Public Service Announcement <br><br><br><br>
+        SIXTY-SEVENTH ORDINARY SESSION OF THE ECOWAS AUTHORITY OF HEADS OF STATE AND <br> GOVERNMENT <br><br><br>
+        ADDRESS TO THE NATION: A NEW CHAPTER IN LIBERIA'S GLOBAL ENGAGEMENT <br><br><br>
+        EXEDUTIVE ORDER NO. 150 - Suspension of Import Tariff on Rice <br><br><br>
+        Executive Order 146 - Exempting LWSC from Import Duties on Certain Items
+      </label>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="center">
+    <img src="organization-ba.jpg" style="width: 720px;">
+  </div>
+  <br><br>
+  <div class="center">
+    <div id="icons" > <br>
+      <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+      <a href="" style="margin-left: 120px;"> PRESIDENTIAL DOCUMENTS </a>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="center">
+    <div id="icons" > <br>
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <a href="" style="margin-left: 100px; font-size: 26px;"> CAREER AND PROCUREMENT OPPORTUNITIES </a>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="center">
+    <div id="icons" > <br>
+      <i class="fa fa-globe" aria-hidden="true"></i>
+      <a href="" style="margin-left: 100px; font-size: 26px;"> GOVERNMENT LINKS </a>
+    </div>
+  </div>
+  
+  
+
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
